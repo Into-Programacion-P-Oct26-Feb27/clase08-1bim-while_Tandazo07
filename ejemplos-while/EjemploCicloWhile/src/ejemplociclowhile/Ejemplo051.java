@@ -33,13 +33,16 @@ public class Ejemplo051 {
         String nombre;
         String apellido;
 
-        System.out.println("Ingrese el nombre");
+        String cadena_final = "Las notas ingresada son :\n";
+        System.out.println("Ingrese el nombre del estudiante");
         nombre = entrada.nextLine();
-        
+        cadena_final = String.format("%sNombre del estudiante:%s\n",
+                cadena_final, nombre);
+
         System.out.println("Ingrese el apellido");
         apellido = entrada.nextLine();
-        
-        String cadena_final = "Las notas ingresada son :\n";
+        cadena_final = String.format("%sApellido del estudiante:%s\n",
+                cadena_final, apellido);
 
         System.out.println("Ingrese las notas de los estudiantes de su "
                 + "materia");
@@ -49,8 +52,8 @@ public class Ejemplo051 {
                     + "número %d\n", contador);
             calificacion = entrada.nextDouble();
             cadena_final = String.format("%s%.1f\n",
-                cadena_final, calificacion);
-            
+                    cadena_final, calificacion);
+
             suma_total = suma_total + calificacion;
             // contador
             contador = contador + 1;
@@ -64,10 +67,10 @@ public class Ejemplo051 {
         promedio_final = suma_total / limite;
 
         // System.out.printf("El promedio final es %f\n", promedio_final);
-        System.out.printf("%s %s\n %s\n", nombre, apellido,cadena_final);
+        System.out.printf("%s\n ", cadena_final);
     }
 }
 /*
 la cadena final esta acumulando valores para ser presentados al final tipo
 entero,decimal,double
-*/
+ */
