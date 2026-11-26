@@ -46,5 +46,6 @@ public class Ejemplo065 {
     }
 }
 /*
-
+El error es que en la linea 33 faltaba el "entrada.nextLine();" que con ello 
+haciamos una limpieza de bufer  
 */
