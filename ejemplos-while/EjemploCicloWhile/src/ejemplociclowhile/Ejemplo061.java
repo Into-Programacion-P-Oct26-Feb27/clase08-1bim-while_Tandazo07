@@ -34,6 +34,7 @@ public class Ejemplo061 {
     }
 }
 /*
-En este codigo estamos haciendo un ciclo que no tiene fin, hasta que el usuario
+En este codigo estamos haciendo un ciclo que no tiene fin mostrando "desea
+salir del ciclo hasta que salga -100", hasta que el usuario
 de forma manual pueda finalizar el ciclo.
 */
